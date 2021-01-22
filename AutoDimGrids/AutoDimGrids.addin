@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Auto Dimension Grids</Name>
+    <Assembly>AutoDimGrids.dll</Assembly>
+    <AddInId>33770B64-A9B3-49D0-B99D-2C70A648DE8E</AddInId>
+    <FullClassName>AutoDimGrids.ThisApplication</FullClassName>
+    <VendorId>Gast</VendorId>
+    <VendorDescription>gastonbalparda@gmail.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
