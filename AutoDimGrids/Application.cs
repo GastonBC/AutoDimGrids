@@ -65,7 +65,7 @@ namespace AutoDimGrids
                 string AutoDimGridsName = "Auto Dimension Grids";
                 PushButtonData AutoDimGridsData = new PushButtonData(AutoDimGridsName, AutoDimGridsName, exeConfigPath, "AutoDimGrids.ThisCommand"); // Invoke class, pushbutton data
                 AutoDimGridsData.LargeImage = Utils.RetriveImage("AutoDimGrids.Resources.GridsIcons32x32.ico"); // Pushbutton image
-                AutoDimGridsData.ToolTip = "Automatically turn on or off grid bubbles correctly";
+                AutoDimGridsData.ToolTip = "Automatically dimensions grids to the top and left";
                 PushButton SmartGridsButton = DefaultPanel.AddItem(AutoDimGridsData) as PushButton;
 
                 return Result.Succeeded;
