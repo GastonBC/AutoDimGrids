@@ -27,7 +27,6 @@ namespace AutoDimGrids
                 XYZ TopPoint = null;
                 XYZ LeftPoint = null;
 
-
                 foreach (ElementId elemId in uidoc.Selection.GetElementIds())
                 {
                     Element SelectedElem = doc.GetElement(elemId);
