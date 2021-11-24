@@ -8,8 +8,7 @@ namespace AutoDimGrids
 {
     internal static class GlobalVars
     {
-        internal const string TAB_NAME = "Gas Tools";
-        internal const string PANEL_NAME = "Quick Tools";
+        internal const string PANEL_NAME = "Gas Tools";
 
         internal const string APP_GUID = "33770B64-A9B3-49D0-B99D-2C70A648DE8E";
         internal const string CMD_GUID = "896D92EA-B3C0-42C0-B521-E226CC48FA4D";

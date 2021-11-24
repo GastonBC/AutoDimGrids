@@ -35,26 +35,16 @@ namespace AutoDimGrids
 
             RibbonPanel DefaultPanel = null;
 
-            // First try to create the tab
+
+            // Create the panel in Add-ins tab
             try
             {
-                uiApp.CreateRibbonTab(GlobalVars.TAB_NAME);
-            }
-            catch (Autodesk.Revit.Exceptions.ArgumentException)
-            {
-                // Tab is already created
-            }
-
-
-            // Then create the panel
-            try
-            {
-                DefaultPanel = uiApp.CreateRibbonPanel(GlobalVars.TAB_NAME, GlobalVars.PANEL_NAME);
+                DefaultPanel = uiApp.CreateRibbonPanel(GlobalVars.PANEL_NAME);
             }
 
             catch (Autodesk.Revit.Exceptions.ArgumentException)
             {
-                DefaultPanel = uiApp.GetRibbonPanels(GlobalVars.TAB_NAME).FirstOrDefault(n => n.Name.Equals(GlobalVars.PANEL_NAME, StringComparison.InvariantCulture));
+                DefaultPanel = uiApp.GetRibbonPanels().FirstOrDefault(n => n.Name.Equals(GlobalVars.PANEL_NAME, StringComparison.InvariantCulture));
             }
             #endregion
 
@@ -64,7 +54,7 @@ namespace AutoDimGrids
 
                 string AutoDimGridsName = "Auto Dimension Grids";
                 PushButtonData AutoDimGridsData = new PushButtonData(AutoDimGridsName, AutoDimGridsName, exeConfigPath, "AutoDimGrids.ThisCommand"); // Invoke class, pushbutton data
-                AutoDimGridsData.LargeImage = Utils.RetriveImage("AutoDimGrids.Resources.GridsIcons32x32.ico"); // Pushbutton image
+                AutoDimGridsData.LargeImage = Utils.RetriveImage("AutoDimGrids.Resources.DimGrids32x32.ico"); // Pushbutton image
                 AutoDimGridsData.ToolTip = "Automatically dimensions grids to the top and left";
                 PushButton SmartGridsButton = DefaultPanel.AddItem(AutoDimGridsData) as PushButton;
 

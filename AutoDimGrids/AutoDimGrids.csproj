@@ -62,9 +62,7 @@
     <Content Include="AutoDimGrids.addin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\GridsIcons32x32.ico" />
+    <EmbeddedResource Include="Resources\DimGrids32x32.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
