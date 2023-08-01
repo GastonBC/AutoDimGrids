@@ -11,7 +11,8 @@ Doesn't matter if the ends of the grids are aligned or not
 1. Download the compressed file from the releases section
 2. Unzip all files in your revit addins folder
 
-  Normally, this will be the folder. You need to choose your Revit version here
+Normally, this will be the folder. You need to choose your Revit version here
+
 > C:\ProgramData\Autodesk\Revit\Addins
 
 
