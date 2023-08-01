@@ -10,7 +10,7 @@ using Utilities;
 namespace AutoDimGrids
 {
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
-    [Autodesk.Revit.DB.Macros.AddInId(GlobalVars.CMD_GUID)]
+    [Autodesk.Revit.DB.Macros.AddInId("896D92EA-B3C0-42C0-B521-E226CC48FA4D")]
     class ThisCommand : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)

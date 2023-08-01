@@ -12,7 +12,7 @@ using System.Reflection;
 namespace AutoDimGrids
 {
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
-    [Autodesk.Revit.DB.Macros.AddInId(GlobalVars.APP_GUID)]
+    [Autodesk.Revit.DB.Macros.AddInId("33770B64-A9B3-49D0-B99D-2C70A648DE8E")]
     public class ThisApplication : IExternalApplication
     {
         public Result OnShutdown(UIControlledApplication application)
@@ -24,29 +24,11 @@ namespace AutoDimGrids
         {
             #region GAS ADDIN BOILERPLATE
 
-            // Finds and creates the tab, finds and creates the panel
-
-            
-
-            string ThisDllPath = Assembly.GetExecutingAssembly().Location;
-            Assembly ThisAssembly = Assembly.GetExecutingAssembly();
-
             // Assembly that contains the invoke method
-            String exeConfigPath = Path.GetDirectoryName(ThisDllPath) + "\\AutoDimGrids.dll";
+            string exeConfigPath = Utils.GetExeConfigPath("AutoDimGrids.dll");
 
-            RibbonPanel DefaultPanel = null;
-
-
-            // Create the panel in Add-ins tab
-            try
-            {
-                DefaultPanel = uiApp.CreateRibbonPanel(GlobalVars.PANEL_NAME);
-            }
-
-            catch (Autodesk.Revit.Exceptions.ArgumentException)
-            {
-                DefaultPanel = uiApp.GetRibbonPanels().FirstOrDefault(n => n.Name.Equals(GlobalVars.PANEL_NAME, StringComparison.InvariantCulture));
-            }
+            // Finds and creates the tab, finds and creates the panel
+            RibbonPanel DefaultPanel = Utils.GetRevitPanel(uiApp, GasToolsGlobals.PANEL_NAME);
             #endregion
 
 
