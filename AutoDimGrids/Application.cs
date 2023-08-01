@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.DB;
 using System.IO;
+using Utilities;
 using System.Reflection;
 
 namespace AutoDimGrids
@@ -54,7 +55,7 @@ namespace AutoDimGrids
 
                 string AutoDimGridsName = "Auto Dimension Grids";
                 PushButtonData AutoDimGridsData = new PushButtonData(AutoDimGridsName, AutoDimGridsName, exeConfigPath, "AutoDimGrids.ThisCommand"); // Invoke class, pushbutton data
-                AutoDimGridsData.LargeImage = Utils.RetriveImage("AutoDimGrids.Resources.DimGrids32x32.ico"); // Pushbutton image
+                AutoDimGridsData.LargeImage = Utils.RetriveImage("AutoDimGrids.Resources.DimGrids32x32.ico", Assembly.GetExecutingAssembly()); // Pushbutton image
                 AutoDimGridsData.ToolTip = "Automatically dimensions grids to the top and left";
                 PushButton SmartGridsButton = DefaultPanel.AddItem(AutoDimGridsData) as PushButton;
 

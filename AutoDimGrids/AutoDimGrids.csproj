@@ -10,9 +10,10 @@
     <RootNamespace>AutoDimGrids</RootNamespace>
     <AssemblyName>AutoDimGrids</AssemblyName>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,13 +57,18 @@
     <Compile Include="Application.cs" />
     <Compile Include="GlobalVars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AutoDimGrids.addin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Resources\DimGrids32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PrivateRevitAPI\Utilities\Utilities\Utilities.csproj">
+      <Project>{396dabc9-0ea8-4ef8-a7c1-106b13af0c16}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

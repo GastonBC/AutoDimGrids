@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDimGrids", "AutoDimGrids.csproj", "{64383490-18F4-4DBE-BF02-B9DF28D26996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "..\..\..\PrivateRevitAPI\Utilities\Utilities\Utilities.csproj", "{396DABC9-0EA8-4EF8-A7C1-106B13AF0C16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{64383490-18F4-4DBE-BF02-B9DF28D26996}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64383490-18F4-4DBE-BF02-B9DF28D26996}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64383490-18F4-4DBE-BF02-B9DF28D26996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396DABC9-0EA8-4EF8-A7C1-106B13AF0C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396DABC9-0EA8-4EF8-A7C1-106B13AF0C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396DABC9-0EA8-4EF8-A7C1-106B13AF0C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396DABC9-0EA8-4EF8-A7C1-106B13AF0C16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
