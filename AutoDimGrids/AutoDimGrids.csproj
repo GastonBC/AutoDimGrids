@@ -64,8 +64,8 @@
     <EmbeddedResource Include="Resources\DimGrids32x32.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\PrivateRevitAPI\Utilities\Utilities\Utilities.csproj">
-      <Project>{396dabc9-0ea8-4ef8-a7c1-106b13af0c16}</Project>
+    <ProjectReference Include="..\..\Utilities\Utilities.csproj">
+      <Project>{f80d15f6-f12a-4b69-bcd8-afbabe5823e3}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
