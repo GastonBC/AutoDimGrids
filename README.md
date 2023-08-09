@@ -6,6 +6,8 @@ Select the grids (doesn't work on grids at an angle yet) you want to dimension a
 
 Doesn't matter if the ends of the grids are aligned or not
 
+![2023-08-09_15-48-03](https://github.com/GastonBC/AutoDimGrids/assets/60661612/632d2be6-a4ee-48d5-8c44-9618816a50cc)
+
 ## Installation
 
 [Refer to this page](https://github.com/GastonBC/GasTools/wiki/How-to-install-an-addin)
